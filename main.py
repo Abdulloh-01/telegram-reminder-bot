@@ -287,7 +287,13 @@ async def process_repeat_choice(message: Message, state: FSMContext):
 
     reminder_datetime = datetime.strptime(remind_time_str, "%Y-%m-%d %H:%M:%S")
     now = datetime.now()
+
+    print(f"NOW = {now}")
+    
+
     seconds_to_wait = (reminder_datetime - now).total_seconds()
+
+    print(f"SECONDS = {seconds_to_wait}")
 
     print("=== Создание напоминания ===")
     print(f"text={text}")
