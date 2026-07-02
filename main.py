@@ -289,6 +289,11 @@ async def process_repeat_choice(message: Message, state: FSMContext):
     now = datetime.now()
     seconds_to_wait = (reminder_datetime - now).total_seconds()
 
+    print("=== Создание напоминания ===")
+    print(f"text={text}")
+    print(f"time={remind_time_str}")
+    print(f"seconds={seconds_to_wait}")
+
     asyncio.create_task(
         send_reminder_by_delay(
             message.chat.id,
@@ -310,6 +315,35 @@ async def process_repeat_choice(message: Message, state: FSMContext):
     await state.clear()
 
 async def send_reminder_by_delay(chat_id, user_id, text, remind_time_str, seconds, is_daily=0):
+    print("=== send_reminder_by_delay стартовала ===")
+    print(f"seconds={seconds}")
+
+    try:
+        if seconds > 0:
+            print("Начинаю ожидание...")
+            await asyncio.sleep(seconds)
+
+        print("Ожидание закончилось")
+        print("Отправляю сообщение...")
+
+        await bot.send_message(
+            chat_id,
+            f"🔔 <b>Напоминание!</b>\n\n📝 {text}",
+            parse_mode="HTML"
+        )
+
+        print("Сообщение успешно отправлено")
+
+        # ⬇️ Ниже должен идти твой старый код:
+        if is_daily:
+            ...
+        else:
+            ...
+
+    except Exception as e:
+        print(f"Ошибка отправки: {e}")
+
+        # дальше оставь свой существующий код
     try:
         if seconds > 0:
             await asyncio.sleep(seconds)
