@@ -1,23 +1,40 @@
 # Telegram Reminder Bot
 
-A Telegram bot for creating one-time and daily reminders, built with Python and Aiogram 3.
+A multilingual Telegram bot for creating one-time and daily reminders, built with Python and Aiogram 3. The bot supports natural language date parsing and is deployed on Railway.
 
 ## Features
 
-- Create one-time reminders
-- Create daily reminders
-- View all personal reminders
-- Delete reminders
-- Admin commands for user management
-- SQLite database for data storage
-- Secure token management using `.env`
+* Create one-time reminders
+* Create daily reminders
+* Natural language date parsing
+
+  * Examples:
+
+    * `tomorrow at 10:00`
+    * `Friday 18:00`
+    * `15.07.2026 15:00`
+    * `today at 12 pm`
+* Multi-language support
+
+  * 🇷🇺 Russian
+  * 🇺🇸 English
+  * 🇺🇿 Uzbek
+* View all personal reminders
+* Delete reminders
+* Automatic reminder recovery after server restart
+* Admin commands for user management
+* SQLite database for data storage
+* Secure token management using `.env`
+* Cloud deployment with Railway
 
 ## Tech Stack
 
-- Python 3
-- Aiogram 3
-- SQLite
-- Git & GitHub
+* Python 3
+* Aiogram 3
+* SQLite
+* Python Dotenv
+* Railway
+* Git & GitHub
 
 ## Installation
 
@@ -45,6 +62,12 @@ Run the bot:
 python m.py
 ```
 
+## Deployment
+
+The bot is deployed on Railway.
+
+Environment variables are managed securely through the Railway dashboard, which keeps sensitive data such as the bot token out of the source code.
+
 ## Project Structure
 
 ```text
@@ -55,6 +78,14 @@ python m.py
 ├── .gitignore    # Ignored files
 └── notes.db      # SQLite database
 ```
+
+## Future Improvements
+
+* Weekly reminders
+* Custom user time zones
+* PostgreSQL support
+* Web dashboard
+* Reminder categories and tags
 
 ## Author
 
