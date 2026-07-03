@@ -293,7 +293,7 @@ async def save_reminder(message: Message, state: FSMContext):
     )
     await message.answer(MESSAGES[lang]["ask_repeat"], reply_markup=repeat_keyboard)
 
-@dp.message(F.text.in_({"🗑 Удалить напоминание", "🗑 Delete a reminder", "🗑 Eslatmanі o'chirish"}))
+@dp.message(F.text.in_({"🗑 Удалить напоминание", "🗑 Delete a reminder", "🗑 Eslatmani o'chirish"}))
 async def delete_menu(message: Message, state: FSMContext):
     data = await state.get_data()
     lang = data.get("lang", "ru")
