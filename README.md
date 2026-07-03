@@ -59,7 +59,7 @@ BOT_TOKEN=YOUR_BOT_TOKEN
 Run the bot:
 
 ```bash
-python m.py
+python main.py
 ```
 
 ## Deployment
@@ -72,7 +72,7 @@ Environment variables are managed securely through the Railway dashboard, which 
 
 ```text
 .
-├── m.py          # Main bot logic
+├── main.py          # Main bot logic
 ├── db.py         # Database functions
 ├── .env          # Environment variables (not uploaded to GitHub)
 ├── .gitignore    # Ignored files
