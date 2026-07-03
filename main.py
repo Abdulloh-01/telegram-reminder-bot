@@ -65,7 +65,7 @@ MESSAGES = {
         "no_reminders": "📭 You have no reminders yet.",
         "your_reminders": "📋 Your reminders:\n\n",
         "ask_text": "📝 Write down what you want me to remind you about:",
-        "ask_when": "📅 When should I remind you?\n\nExamples of input:\n• on Monday at 12:30\n• Friday 18:00\n• tomorrow at 10:00 am\n• today at 12 pm\n15.07.2026 15:00",
+        "ask_when": "📅 When should I remind you?\n\nExamples of input:\n• on Monday at 12:30\n• Friday 18:00\n• tomorrow at 10:00 am\n• today at 12 pm\n• 15.07.2026 15:00",
         "parse_error": "❌ Could not understand the time. It seems you forgot to specify HH:MM.",
         "ask_repeat": "🔁 What type of reminder should I create?",
         "choose_delete": "🗑 Choose the reminder number to delete:\n\n",
