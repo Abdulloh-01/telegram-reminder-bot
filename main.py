@@ -86,7 +86,7 @@ MESSAGES = {
         "no_reminders": "📭 Sizda hali eslatmalar yo'q.",
         "your_reminders": "📋 Sizning eslatmalaringiz:\n\n",
         "ask_text": "📝 Nimani eslatishim kerakligini yozing:",
-        "ask_when": "📅 Qachon eslatay?\n\nKiritishga misollar:\n• dushanba kuni soat 12:30 da\n• juma 18:00\n• ertaga soat 10:00 da\n• bugun soat 12:00 da\n• 03.07.2026",
+        "ask_when": "📅 Qachon eslatay?\n\nKiritishga misollar:\n• dushanba kuni soat 12:30 da\n• juma 18:00\n• ertaga soat 10:00 da\n• bugun soat 12:00 da\n• 03.07.2026 12:00",
         "parse_error": "❌ Vaqtni tushunib bo'lmadi. Soat va daqiqani (SS:MM) ko'rsatishni unutgandekmiz.",
         "ask_repeat": "🔁 Qanday eslatma yaratamiz?",
         "choose_delete": "🗑 O'chirish uchun eslatma raqamini tanlang:\n\n",
